@@ -16,13 +16,13 @@
 				<a class="btn primary large" style="float:right;" data-controls-modal="new" data-backdrop="static">
 					New <?=$model?>
 				</a>
-				<h1><?=$model?>s</h1>
+				<h1><?=ucfirst($model)?>s</h1>
 			</div>
 
 			<table class="table table-striped">
 
 				<tr>
-<?foreach($fields as $field_name => $field_type):?>
+<?foreach($list_fields as $field_name => $field_type):?>
 					<th><?=$field_name?></th>
 <?endforeach;?>
 					<th></th>
@@ -30,7 +30,7 @@
 
 <?foreach($data as $item):?>
 				<tr>
-	<?foreach($fields as $field_name => $field_type):?>
+	<?foreach($list_fields as $field_name => $field_type):?>
 					<td><?=$item[$field_name]?></td>
 	<?endforeach;?>
 					<td style="text-align:right;">
