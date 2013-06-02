@@ -2,8 +2,10 @@
 
 mb_internal_encoding( 'UTF-8' );
 
-require_once('../bootstrap.php');
+//require_once('../bootstrap.php');
 
+echo 4;
+exit;
 
 
 if(
